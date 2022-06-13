@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio DOM</title>
+    <script src="produto.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form onsubmit="app.adicionarProduto()">
+        <p>
+            <label for="nome-peca">Produto: </label>
+            <input type="text" name="produto_nome" id="nome-peca">
+        </p>
+        <p>
+            <label for="id-peca">ID: </label>
+            <input type="text" name="produto_id" id="id-peca">
+        </p>
+        <p>
+            <label for="valor-peca">Valor: </label>
+            <input type="text" name="produto_valor" id="valor-peca">
+        </p>
+        <p>
+            <input type="checkbox" name="peca-disponivel" id="disponivel">
+            <label for="disponivel">Disponivel</label>
+        </p>
+        <p>
+            <button type="submit">Salvar</button>
+        </p>
+    </form>
+
+    <ul id="catalogo"></ul>
+
+</body>
+
+</html>
